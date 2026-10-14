@@ -13,7 +13,7 @@
     "pretypes:check": "npm run docs:generate"
   },
   "dependencies": {
-    "@fumadocs/language": "^0.2.10",
+    "@fumadocs/language": "^0.2.11",
     "cn": "^0.4.0",
     "fumadocs-core": "16.16.2",
     "fumadocs-mdx": "15.4.6",

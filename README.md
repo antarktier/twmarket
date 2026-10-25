@@ -22,9 +22,9 @@ uv add twmarket
 <h2>文件</h2>
 
 <ul>
-  <li><a href="https://twmarket.cmos.tw/docs/">開始使用</a></li>
-  <li><a href="https://twmarket.cmos.tw/docs/reference/data-contracts/">API 參考</a></li>
-  <li><a href="https://twmarket.cmos.tw/docs/how-to/development/">開發</a></li>
+  <li><a href="https://cmostw.github.io/twmarket/docs/">開始使用</a></li>
+  <li><a href="https://cmostw.github.io/twmarket/docs/reference/data-contracts/">API 參考</a></li>
+  <li><a href="https://github.com/cmostw/twmarket/blob/main/apps/docs/CONTRIBUTING.md">開發</a></li>
 </ul>
 
 <h2>授權</h2>

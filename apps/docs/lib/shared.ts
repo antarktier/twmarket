@@ -2,6 +2,9 @@ import { i18n } from './i18n';
 import { createGetUrl } from 'fumadocs-core/source';
 
 export const appName = 'twmarket';
+
+// Prefix for fetches and URLs that next/link does not rewrite.
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 export const docsRoute = '/docs';
 export const docsImageRoute = '/og/docs';
 export const docsContentRoute = '/llms.mdx/docs';

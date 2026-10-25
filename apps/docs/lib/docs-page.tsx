@@ -10,14 +10,14 @@ import {
 import { notFound } from 'next/navigation';
 import { getMDXComponents } from '@/components/mdx';
 import type { Metadata } from 'next';
-import { getPageImageUrl, getPageMarkdownUrl, gitConfig } from '@/lib/shared';
+import { basePath, getPageImageUrl, getPageMarkdownUrl, gitConfig } from '@/lib/shared';
 
 export async function DocumentationPage({ slugs, locale }: { slugs?: string[]; locale: string }) {
   const page = source.getPage(slugs, locale);
   if (!page) notFound();
 
   const MDX = page.data.body;
-  const markdownUrl = getPageMarkdownUrl(page).url;
+  const markdownUrl = basePath + getPageMarkdownUrl(page).url;
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>

@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "twmarket"
-version = "0.1.0"
+version = "0.2.0"
 description = "Python data library for Taiwan securities, futures, and options"
 readme = "README.md"
 license = "MIT"
@@ -15,6 +15,11 @@ dependencies = [
     "lxml>=5.3,<7",
     "orjson>=3.10,<4",
 ]
+
+[project.urls]
+Documentation = "https://cmostw.github.io/twmarket/"
+Repository = "https://github.com/cmostw/twmarket"
+Issues = "https://github.com/cmostw/twmarket/issues"
 
 [project.optional-dependencies]
 stream = ["websockets>=17,<18"]

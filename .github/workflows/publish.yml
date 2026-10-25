@@ -15,12 +15,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.event.release.tag_name }}
-      - uses: astral-sh/setup-uv@v6
+      # No cache on release builds to rule out cache poisoning.
+      - uses: astral-sh/setup-uv@v10.3.2
         with:
-          enable-cache: true
+          enable-cache: false
       - name: Validate release version
         env:
           RELEASE_TAG: ${{ github.event.release.tag_name }}
@@ -62,4 +63,4 @@ jobs:
           name: distributions
           path: dist/
       - name: Publish to PyPI with OIDC
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@v1.14.3

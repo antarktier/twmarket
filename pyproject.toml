@@ -17,9 +17,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-stream = ["websockets>=15,<17"]
+stream = ["websockets>=17,<18"]
 pandas = ["pandas>=2.2,<4"]
-polars = ["polars>=1.0,<2"]
+polars = ["polars>=2,<3"]
 
 [dependency-groups]
 dev = [

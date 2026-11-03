@@ -19,7 +19,7 @@ jobs:
         with:
           ref: ${{ github.event.release.tag_name }}
       # No cache on release builds to rule out cache poisoning.
-      - uses: astral-sh/setup-uv@v10.3.2
+      - uses: astral-sh/setup-uv@v10.3.3
         with:
           enable-cache: false
       - name: Validate release version
